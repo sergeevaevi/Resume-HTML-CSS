@@ -1,0 +1,181 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>My awesome resume</title>
+    <meta name="description" content="My awesome resume">
+    <meta name="author" content="Johny Catswill">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script>
+        (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+                const button = window.document.querySelector('.actions__download-btn');
+                button.onclick = function () {
+                    const source = window.document.querySelector('.resume-page');
+                    html2pdf(source);
+                };
+            }, false);
+        })();
+    </script>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__content">
+        <div class="logo">
+            <a href="/" class="logo__text">CV Super Builder</a>
+        </div>
+        <div class="actions">
+            <button class="actions__download-btn">Download PDF</button>
+        </div>
+    </div>
+</header>
+<main class="resume-container">
+    <div class="resume-page">
+        <div class="resume-page__content">
+            <div class="resume-page__header">
+                <div>
+                    <img src="images/profile.jpg">
+                </div>
+                <div class="resume-page__header-text-name">
+                    <div>Elena Sergeeva</div>
+                    <div>junior software developer</div>
+                </div>
+                <div class="resume-page__header-text-contact">
+                    <div>+79147959926</div>
+                    <div>elena.sergeeva.99@list.ru</div>
+                </div>
+            </div>
+            <div class="resume-page__goal">
+                A fast-paced graduate student keen on a part-time position in IT industry, no work experience, but
+                highly motivated to get it.
+            </div>
+            <div class="resume-page__info">
+                <div class="resume-page__edu">
+                    <div class="resume-info_title">
+                        EDUCATION
+                    </div>
+                    <div>
+                        <div>
+                            <b>Bachelor of Applied Mathematics and Computer Science</b>, Far Eastern Federal University,
+                            Vladivostok, Russia
+                        </div>
+                        <div>
+                            <b>Coursework:</b> Introduction to Game Design, Introduction to Git and GitHub, Quick start
+                            in Android-development,
+                            Introduction to Kotlin, Creating Web-services with Python
+                        </div>
+                        <span class="resume-info_edu_span">Sept 2017 - Sept 2021</span>
+                    </div>
+                </div>
+                <div class="resume-page__skills">
+                    <div class="resume-info_title">
+                        SKILLS
+                    </div>
+                    <div>
+                        <div>
+                            <div>C/C++</div>
+                            <div>Python</div>
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <div>JS</div>
+                            <div>Kotlin</div>
+                        </div>
+                        <div>
+                            <div>SQL</div>
+                            <div>Linux</div>
+                            <div>Git</div>
+                            <div>Adobe Ps</div>
+                            <div>Adobe Ls</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-page__expr">
+                    <div class="resume-info_title">
+                        INTERNSHIP EXPERIENCE
+                    </div>
+                    <div>
+                        <div>
+                            <b>Programmer</b> at <b> Project Activity Center FEFU:</b>
+                        </div>
+                        <div>
+                            — Creating interface for sputnik-schedule program
+                        </div>
+                        <div>
+                            — Also write python-code to interact with sputnik model
+                        </div>
+                        <div>
+                            — Had some experience in team working
+                        </div>
+                        <div>
+                            — Participation in WorldSkills Russia 2019
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-page__lang">
+                    <div class="resume-info_title">
+                        LANGUAGES
+                    </div>
+                    <div>
+                        <div>
+                            <div>Russian</div>
+                            <div>English</div>
+                        </div>
+                        <div>
+<!--                            <div>Native</div>-->
+<!--                            <div>Upper-Intermediate</div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-page__proj">
+                    <div class="resume-info_title">
+                        PROJECTS AND PUBLIC TALKS
+                    </div>
+                    <div>
+                        <div>
+                            <b>
+                                Game 2048
+                            </b> with JS
+                        </div>
+                        <span>Jul 2018</span>
+                        <div>
+                            <b>
+                                Rogue-like game </b>with C++
+                        </div>
+                        <span>Feb 2019</span>
+                        <div>
+                            <b>
+                                DBMS </b> with C++
+                        </div>
+                        <span>Nov 2020</span>
+                        <div>
+                            <b>
+                                Music Renamer </b>with C++
+                        </div>
+                        <span>Jun 2020</span>
+                        <div>
+                            <b>
+                                Compression algorithm </b> as graduate work with OpenCV/C++
+                        </div>
+                        <span>Jun 2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-page__link">
+                <a class="logo-git" href="https://github.com/sergeevaevi">
+                </a>
+                <a class="logo-twitter" href="https://twitter.com/Llen62900360">
+                </a>
+                <a class="logo-vk" href="https://vk.com/lllens">
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
